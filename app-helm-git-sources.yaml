@@ -7,13 +7,7 @@ spec:
     name: ''
     namespace: poc-clh-5
     server: 'https://kubernetes.default.svc'
-  source:
-    path: helm
-    repoURL: 'https://github.com/VictorFernandezArias/poc-gitops-github.git'
-    targetRevision: main
-    helm:
-      valueFiles:
-        - values-prod.yaml
+  source: []
   sources: 
   - path: helm
     repoURL: https://prometheus-community.github.io/helm-charts
