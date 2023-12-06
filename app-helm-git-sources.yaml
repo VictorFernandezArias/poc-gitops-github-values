@@ -7,7 +7,6 @@ spec:
     name: ''
     namespace: poc-clh-5
     server: 'https://kubernetes.default.svc'
-  source: []
   sources: 
   - path: helm
     repoURL: https://github.com/VictorFernandezArias/poc-gitops-github.git
