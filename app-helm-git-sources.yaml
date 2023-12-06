@@ -14,7 +14,16 @@ spec:
     helm:
       valueFiles:
         - values-prod.yaml
-  sources: []
+  sources: 
+  - path: helm
+    repoURL: https://prometheus-community.github.io/helm-charts
+    targetRevision: main
+    helm:
+      valueFiles:
+      - $values/values-prod.yaml
+  - ref: values
+    repoURL: https://github.com/VictorFernandezArias/poc-gitops-github-values.git
+    targetRevision: main
   project: default
   syncPolicy:
     automated:
