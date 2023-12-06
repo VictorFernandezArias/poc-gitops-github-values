@@ -10,7 +10,7 @@ spec:
   source: []
   sources: 
   - path: helm
-    repoURL: https://prometheus-community.github.io/helm-charts
+    repoURL: https://github.com/VictorFernandezArias/poc-gitops-github.git
     targetRevision: main
     helm:
       valueFiles:
